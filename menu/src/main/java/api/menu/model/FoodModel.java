@@ -1,5 +1,6 @@
 package api.menu.model;
 
+import api.menu.dtos.FoodRequestDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,4 +28,10 @@ public class FoodModel {
     private String image;
 
     private Integer price;
+
+    public FoodModel(FoodRequestDTO data){
+        this.title = data.title();
+        this.image = data.image();
+        this.price = data.price();
+    }
 }
