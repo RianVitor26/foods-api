@@ -6,8 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Table(name="foods")
-@Entity(name = "foods")
+@Entity
+@Table(name = "foods")
 public class FoodModel {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
