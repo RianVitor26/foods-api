@@ -34,4 +34,13 @@ public class FoodModel {
         this.image = data.image();
         this.price = data.price();
     }
+
+    public void setTitle(Object title2) {
+    }
+
+    public void setImage(Object image2) {
+    }
+
+    public void setPrice(Object price2) {
+    }
 }
